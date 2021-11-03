@@ -1,0 +1,378 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*::selection {
+    background: #4ea685;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #8881ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    color: #8881ab;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    transition: 200ms ease;
+}
+
+main {
+    width: 80%;
+    height: 95vh;
+    background: linear-gradient(to bottom,  #25253f, #2f2c4b);
+    backdrop-filter: blur(3rem);
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+.site-brand {
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggler {
+    font-size: 1.5rem;
+    color: #8881ab;
+    background: transparent;
+    border: 1px solid #8881ab;
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.showcase {
+    display: flex;
+    margin-top: 2rem;
+    height: 50%;
+    align-items: center;
+}
+
+.highlight {
+    color: #4ea685;
+}
+
+.site-intro {
+    flex: 1;
+}
+
+.site-intro h1 {
+    font-size: 2rem;
+}
+.site-intro p {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: rgb(179, 178, 178);
+}
+
+.button {
+    background: #4ea685;
+    color: #25253f;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+.button:hover {
+    color: #fff;
+    
+}
+
+.site-img {
+    flex: 1;
+    width: 50%;
+    height: auto;
+}
+
+.services {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.serv-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.serv-item {
+    background: #3b3654;
+    padding: 1rem 0.5rem;
+    border-radius: 0.3rem;
+    margin: 0 1rem;
+    transition: 200ms margin;
+}
+.serv-item:hover {
+    margin-top: -1rem;
+}
+
+.serv-item .more {
+    color: #4ea685;
+}
+.serv-item .more:hover {
+    color: #fff;
+}
+
+.serv-icon {
+    width: 3rem;
+}
+
+.serv-title {
+    margin: 0.5rem 0;
+    color: #4ea685;
+}
+
+.serv-desc {
+    color: rgb(179, 178, 178);
+    margin-bottom: 1rem;
+}
+
+.breadicon {
+    display: none;
+    color: #4ea685;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#projects {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.projects-intro {
+    text-align: center;
+    color: rgb(179, 178, 178);
+    width: 80%;
+    margin: auto;
+    margin: 2rem 0;
+}
+
+.projects-title {
+    color: #4ea685;
+}
+
+.projects-desc {
+    margin: 1rem 0;
+}
+
+.projects-list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project {
+    position: relative;
+}
+
+.project img {
+    max-width: 15rem;
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.project-overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    height: 0;
+    transition: 300ms ease-out height;
+    background: rgba(37, 37, 63, 0.7);
+    border-radius: 0.5rem;
+}
+
+.project-title {
+    color: #4ea685;
+    margin-bottom: 1rem;
+}
+
+.project-details {
+    margin-bottom: 1rem;
+}
+
+.view-project {
+    background: transparent;
+    border: 2px solid #4ea685;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+
+.project:hover .project-overlay {
+    height: 100%;
+}
+
+
+
+#testimonies {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.test-intro {
+    text-align: center;
+    color: rgb(179, 178, 178);
+    width: 80%;
+    margin: auto;
+    margin: 2rem 0;
+}
+
+.test-title {
+    color: #4ea685;
+    margin-bottom: 1rem;
+}
+
+.tests-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.test {
+    margin: 1rem;
+    color: rgb(179, 178, 178);
+    background: #3b3654;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.client-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.client-details img {
+    border: 2px solid #4ea685;
+    border-radius: 50%;
+}
+
+.client-details p {
+    margin-left: 2rem;
+}
+
+footer {
+    display: none;
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright {
+    color: #8881ab;
+}
+
+footer .socials {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+}
+
+.social-item {
+    margin-left: 1rem;
+}
+
+
+
+/* MEDIA QUERIES OF RESPONSIVE DESIGN */
+
+/* This is for extra small devices (Potrait Phone, less than 576px */
+@media (max-width: 575.98px){
+    .nav-menu {
+        display: none;
+    }
+    .nav-toggler {
+        display: block;
+    }
+    .showcase .site-img {
+        display: none;
+    }
+}
+
+/* This is for small devices (Landscape Phone, between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-toggler {
+        display: block;
+    }
+    
+}
+
+/* This is for medium devices (Potrait Tablets, between 768px and 992px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+/* This is for large devices (Desktops, Laptops, between 992px and 1200px */
+@media (min-width: 992px) and (max-width: 1119.98px) {
+    
+}
+
+/* This is for very large devices (Large Desktops, TVs, 1200px and up */
+@media (min-width: 1200px) {
+    
+}
