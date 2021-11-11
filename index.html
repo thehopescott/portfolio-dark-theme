@@ -11,23 +11,22 @@
     <body>
         <main>
             <nav class="container">
-                <a href="/" class="site-brand">Scott</a>
+                <a href="./" class="site-brand">Scott</a>
                 <button class="nav-toggler"><i class="bi bi-list"></i></button>
                 <ul class="nav-menu">
                     <li class="nav-item" id="aboutLink">About</li>
                     <li class="nav-item" id="proLink">Projects</li>
                     <li class="nav-item" id="tesLink">Testimonies</li>
-                    <li class="nav-item">
-                        <a href="#hireme" class="nav-link hireme">Hire Me</a>
-                    </li>
+                    <li class="nav-item hire-me">Hire Me</li>
                 </ul>
             </nav>
             <div id="home">
                 <section class="showcase container">
                     <div class="site-intro">
                         <h1>
-                            Hi, I am <span class="highlight">Scott</span>, Web
-                            Designer and Developer.
+                            Hi, I am <span class="highlight">Scott</span>,
+                            <br />
+                            Web Designer and Developer.
                         </h1>
                         <p>
                             Self taught Creative Web Designer and Developer who
@@ -55,9 +54,9 @@
                                 Are you looking for someone to design your
                                 website or web application?
                             </p>
-                            <a href="#" class="more"
-                                >Hire Me <i class="bi bi-arrow-right"></i
-                            ></a>
+                            <p class="hire-me">
+                                Hire me <i class="bi bi-arrow-right"></i>
+                            </p>
                         </li>
                         <li class="serv-item">
                             <img
@@ -70,9 +69,9 @@
                                 Do you want a personal or business website
                                 created or an old one updated?
                             </p>
-                            <a href="#" class="more"
-                                >Let's talk <i class="bi bi-arrow-right"></i
-                            ></a>
+                            <p class="hire-me">
+                                Let's talk <i class="bi bi-arrow-right"></i>
+                            </p>
                         </li>
                         <li class="serv-item">
                             <img
@@ -85,21 +84,57 @@
                                 Are you considering getting into Web Development
                                 and would like a tutor?
                             </p>
-                            <a href="#" class="more"
-                                >Hit me up <i class="bi bi-arrow-right"></i
-                            ></a>
+                            <p class="hire-me">
+                                Hit me up <i class="bi bi-arrow-right"></i>
+                            </p>
                         </li>
                     </ul>
                 </section>
             </div>
 
-            <div id="aboutme" class="container"></div>
+            <div id="aboutme" class="container">
+                <div class="about-details">
+                    <h2>About Me</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum at dolor ab necessitatibus ipsum nulla
+                        doloremque quis, dolores voluptate, saepe repellendus
+                        assumenda similique quae! Obcaecati vitae in quasi
+                        voluptas placeat.
+                    </p>
+                    <br />
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum at dolor ab necessitatibus ipsum nulla
+                        doloremque quis, dolores voluptate, saepe repellendus
+                        assumenda similique quae! Obcaecati vitae in quasi
+                        voluptas placeat.
+                    </p>
+                    <h2>About Me</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Cum at dolor ab necessitatibus ipsum nulla
+                        doloremque quis, dolores voluptate, saepe repellendus
+                        assumenda similique quae! Obcaecati vitae in quasi
+                        voluptas placeat.
+                    </p>
+                </div>
+                <img
+                    src="/dark_portfolio/img/undraw_react_y-7-wq.svg"
+                    alt=""
+                    class="head-shot"
+                />
+            </div>
             <div id="projects" class="container">
                 <div class="projects-intro">
                     <h1 class="projects-title">Recent Projects</h1>
                     <p class="projects-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Praesentium ullam perspiciatis laborum sed cum.
+                        Below are some of the most recent projects I have
+                        completed. A full list of all the projects that I have
+                        worked on and contributed to can be found on my
+                        <a href="https://github.com/thehopescott"
+                            >GitHub Profile</a
+                        >.
                     </p>
                 </div>
                 <ul class="projects-list">
@@ -193,6 +228,39 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <div id="contactme" class="container">
+                <div class="contact-intro">
+                    <h1>
+                        Get in touch with me.
+                        <small>Let's talk your next project.</small>
+                    </h1>
+                    <p>
+                        Send me a message on this platform or contact me through
+                        my social media profiles.
+                    </p>
+                </div>
+                <form action="#" method="post">
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="Fullname"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    />
+                    <textarea name="message" id="message" cols="30" rows="5">
+Your message here</textarea
+                    >
+                    <input type="submit" id="submit" value="SEND" />
+                </form>
             </div>
 
             <footer>
