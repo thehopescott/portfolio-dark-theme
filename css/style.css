@@ -1,8 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
 
 *::selection {
@@ -19,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -26,20 +30,26 @@ body {
     margin: auto;
 }
 
-a {
+a,
+.nav-item {
     color: #8881ab;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.nav-item:hover {
     color: #fff;
     transition: 200ms ease;
+}
+
+.nav-item {
+    cursor: pointer;
 }
 
 main {
     width: 80%;
     height: 95vh;
-    background: linear-gradient(to bottom,  #25253f, #2f2c4b);
+    background: linear-gradient(to bottom, #25253f, #2f2c4b);
     backdrop-filter: blur(3rem);
     border-radius: 0.5rem;
     color: #fff;
@@ -110,7 +120,6 @@ nav {
 }
 .button:hover {
     color: #fff;
-    
 }
 
 .site-img {
@@ -172,7 +181,7 @@ nav {
 }
 
 #projects {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
@@ -246,15 +255,12 @@ nav {
     cursor: pointer;
 }
 
-
 .project:hover .project-overlay {
     height: 100%;
 }
 
-
-
 #testimonies {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
@@ -305,7 +311,7 @@ nav {
 }
 
 footer {
-    display: none;
+    display: block;
     width: 100%;
     height: 3rem;
     position: absolute;
@@ -334,20 +340,101 @@ footer .socials {
     margin-left: 1rem;
 }
 
-
-
 /* MEDIA QUERIES OF RESPONSIVE DESIGN */
 
 /* This is for extra small devices (Potrait Phone, less than 576px */
-@media (max-width: 575.98px){
+@media (max-width: 575.98px) {
+    body {
+        overflow-y: scroll;
+    }
+    main {
+        width: 90%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    nav {
+        padding-top: 1rem;
+    }
     .nav-menu {
         display: none;
     }
     .nav-toggler {
         display: block;
     }
+    .showcase {
+        margin-top: 3rem;
+    }
+
+    .site-intro h1 {
+        font-size: 1.5rem;
+    }
+    .site-intro p {
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        color: rgb(179, 178, 178);
+    }
+
+    .button {
+        background: #4ea685;
+        color: #25253f;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
     .showcase .site-img {
         display: none;
+    }
+    .serv-items {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 0 2rem;
+    }
+
+    .serv-item {
+        margin: 1rem 0;
+    }
+
+    #projects {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .project-intro {
+        text-align: left;
+    }
+
+    .projects-list {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .project {
+        margin-bottom: 1rem;
+    }
+
+    .project img {
+        max-width: 17rem;
+        border-radius: 0.5rem;
+        height: auto;
+    }
+
+    footer {
+        position: relative;
+        margin-bottom: 0.5rem;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    footer .copyright {
+        margin: 0.5rem 0;
     }
 }
 
@@ -359,20 +446,16 @@ footer .socials {
     .nav-toggler {
         display: block;
     }
-    
 }
 
 /* This is for medium devices (Potrait Tablets, between 768px and 992px */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    
 }
 
 /* This is for large devices (Desktops, Laptops, between 992px and 1200px */
 @media (min-width: 992px) and (max-width: 1119.98px) {
-    
 }
 
 /* This is for very large devices (Large Desktops, TVs, 1200px and up */
 @media (min-width: 1200px) {
-    
 }
