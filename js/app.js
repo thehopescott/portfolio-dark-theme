@@ -1,5 +1,5 @@
 const projectsLink = document.querySelector("#proLink");
-const testLink = document.querySelector("#tesLink");
+const testLink = document.querySelector("#testLink");
 const aboutLink = document.querySelector("#aboutLink");
 const contactLinks = document.querySelectorAll(".hire-me");
 
@@ -52,3 +52,20 @@ for (let i = 0; i < contactLinks.length; i++) {
         mainContainer.append(footr);
     });
 }
+
+const navToggler = document.querySelector("nav .nav-toggler");
+let navContainer = document.querySelector("nav .nav-menu");
+let navActive = false;
+
+navToggler.addEventListener("click", () => {
+    navActive = true;
+    navContainer.style.display = "flex";
+    navToggler.innerHTML = '<i class="bi bi-x"></i>';
+    if (navActive) {
+        navToggler.addEventListener("click", () => {
+            navContainer.classList += " nav-slide-out";
+            navToggler.innerHTML = '<i class="bi bi-list"></i>';
+            navActive = false;
+        });
+    }
+});
