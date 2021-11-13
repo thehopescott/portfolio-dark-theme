@@ -434,7 +434,7 @@ footer .socials {
     width: 50%;
     display: flex;
     font-size: 1.5rem;
-    justify-content: flex-end;
+    justify-content: right;
 }
 
 .social-item {
@@ -609,7 +609,6 @@ footer .socials {
     footer div {
         display: flex;
         flex-direction: column-reverse;
-        position: relative;
     }
 
     footer .copyright {

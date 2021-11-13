@@ -63,7 +63,7 @@ navToggler.addEventListener("click", () => {
     navToggler.innerHTML = '<i class="bi bi-x"></i>';
     if (navActive) {
         navToggler.addEventListener("click", () => {
-            navContainer.classList += " nav-slide-out";
+            navContainer.classList.toggle("nav-slide-out");
             navToggler.innerHTML = '<i class="bi bi-list"></i>';
             navActive = false;
         });

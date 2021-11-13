@@ -543,9 +543,9 @@ footer .socials {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.5rem;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .social-item {
@@ -742,7 +742,6 @@ footer .socials {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    position: relative;
   }
   footer .copyright {
     margin: 0.5rem 0;
